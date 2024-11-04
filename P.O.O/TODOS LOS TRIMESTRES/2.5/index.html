@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="alert('Page loaded!')" onresize="alert('Window resized!')">
+    <div>
+        <div><button onclick="alert('Button clicked!')">Click Me</button></div>
+        <div><button ondblclick="alert('Button double clicked!')">Double Click Me</button></div>
+        <div><button onmouseover="alert('Mouse Over!')">Hover Me</button></div>
+        <div><button onmouseout="alert('Mouse Out!')">Move Mouse Out</button></div>
+        <div><button onmousemove="alert('Mouse Moved!')">Move Mouse Here</button></div>
+    </div>
+    <div>
+        <div><input type="text" onkeydown="alert('Key pressed!')"></div>
+        <div><input type="text" onkeyup="alert('Key released!')"></div>
+        <div><input type="text" onchange="alert('Value changed!')"></div>
+        <div><input type="text" onfocus="alert('Input focused!')"></div>
+        <div><input type="text" onblur="alert('Input blurred!')"></div>
+    </div>
+    <div>
+        <form onsubmit="alert('Form submitted!'); return false;">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div>
+        <button id="myButton">Click Me</button>
+
+        <script>
+          document.getElementById("myButton").addEventListener("click", function() {
+            alert('Button clicked!');
+          });
+        </script>
+    </div>
+</body>
+</html>

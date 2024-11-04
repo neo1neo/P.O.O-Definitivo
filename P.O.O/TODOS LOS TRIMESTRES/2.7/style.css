@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+.top-nav{
+    margin: 0 auto;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.container{
+    margin: 0 auto;    
+    width: 1000px;
+
+}
+
+.title{
+    text-align: center;
+    padding: 20px;
+    border-bottom: solid 1px grey;
+    margin-bottom: 20px;
+}
+
+.top-nav h1{
+    text-align: left;
+    padding: 10px;
+}
+
+.row{
+ display: flex;
+}
+
+.left{
+    flex:1;
+}
+
+.right{
+    flex:2;
+    margin-left: 20px;
+}
+
+.user{
+    padding: 20px;
+    text-align: center;
+    border: solid 2px grey;
+}
+
+.user img{
+    height: 128px;
+    width: 128px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.post{
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid grey;
+    font-size: 1.2rem;
+}
+
+.top-line{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.like-btn{
+    background-color: #ffd966;
+    padding: 5px 10px;
+    border: solid 2px black;
+    box-shadow: 4px 4px black;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    cursor: pointer;
+}

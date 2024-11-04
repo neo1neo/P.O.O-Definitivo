@@ -1,0 +1,76 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenedor en la pantalla */
+    align-items: center; /* Centra el contenedor en la pantalla */
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    background-color: #f4f4f4; /* Fondo claro para contraste */
+}
+
+.container {
+    outline: auto;
+    width: 500px; /* Ancho del contenedor */
+    margin: 20px;
+    padding-inline: 20px; /* Espaciado horizontal */
+    padding-block: 10px; /* Espaciado vertical */
+    position: relative; /* Necesario para el posicionamiento absoluto de la nota */
+}
+
+.col-1 {
+    display: flex; /* Flexbox para alineación horizontal */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    background-color: white; /* Fondo blanco para las publicaciones */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 15px; /* Espaciado entre publicaciones */
+    border: 2px solid #000; /* Borde negro */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Botones */
+button {
+    width: 100px; /* Ancho fijo para los botones */
+    height: 50px; /* Alto fijo para los botones */
+    background-color: #FFD966; /* Color de fondo */
+    border: black solid 4px; /* Borde sólido */
+    box-shadow: 4px 4px #000; /* Sombra para los botones */
+    font-weight: bold; /* Negrita */
+    font-size: 20px; /* Tamaño de fuente */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+p {
+    font-size: 23px; /* Tamaño de fuente para los párrafos */
+}
+
+/* Estilo para la nota adhesiva */
+.sticky-note {
+    background-color: #ffeb3b; /* Color de fondo de la nota */
+    color: #000; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    width: 220px; /* Ancho de la nota */
+    font-size: 13px; /* Tamaño de la fuente */
+    position: absolute; /* Posición absoluta para colocarla en el lateral */
+    top: 0; /* Alineación superior */
+    right: -250px; /* Desplazamiento a la derecha */
+    transform: rotate(-5deg); /* Rotación de la nota */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra de la nota */
+    border: 2px solid #000; /* Borde negro para la nota */
+}
+
+.sticky-note::before {
+    content: ""; /* Contenido vacío para el pseudo-elemento */
+    position: absolute; /* Posicionamiento absoluto para el pseudo-elemento */
+    top: -10px; /* Desplazamiento superior */
+    left: 50px; /* Desplazamiento a la izquierda */
+    width: 50px; /* Ancho del pseudo-elemento */
+    height: 10px; /* Alto del pseudo-elemento */
+    background-color: red; /* Color de fondo rojo */
+    border-radius: 2px; /* Bordes redondeados */
+    transform: rotate(20deg); /* Rotación del pseudo-elemento */
+}

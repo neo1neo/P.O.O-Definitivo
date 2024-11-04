@@ -1,0 +1,26 @@
+
+.Margin {
+    background-color: #d2691e;
+    padding: 90px; 
+}
+
+.Border {
+    background-color: #ffa07a;
+    padding: 80px; 
+}
+
+.Padding {
+    background-color: #4682b4; 
+    padding: 60px;
+}
+
+.Content {
+    background-color: #b0c4de; 
+    width:560px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}

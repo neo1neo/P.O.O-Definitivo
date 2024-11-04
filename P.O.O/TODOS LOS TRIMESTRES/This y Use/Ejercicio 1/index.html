@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This_use</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expant-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Home</a>
+    </nav>
+    <section class="container mt-5">
+        <h1>Uso de this en JS</h1>
+            <div class="form-group mt-2">
+                <button class="btn btn-primary" onclick="ejemplo(this)"> Hazme clic </button>
+                <button class="btn btn-danger" onclick="ejemplo1(this)"> Desactivado </button>
+                <button class="btn btn-primary" onclick="ejemplo2(this)"> NO TOCAR! </button>
+            </div>
+            <div class="form-group mt-2">
+                <img src="img/images.jpg" alt="gojo" onclick="hide(this)">
+                <img src="img/images1.jpg" alt="gojo1" onclick="hide(this)">
+                <img src="img/images2.jpg" alt="gojo2" onclick="hide(this)">
+                <img src="img/images3.jpg" alt="gojo3" onclick="hide(this)">
+                <img src="img/images4.jpg" alt="gojo4" onclick="hide(this)">
+                <img src="img/images5.jpg" alt="gojo5" onclick="hide(this)">
+            </div>
+        
+        <div class="container mt-3">
+            <ul id="lista"></ul>
+        </div>
+    </section>
+
+    <script src="script.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
