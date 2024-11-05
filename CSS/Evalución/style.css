@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Cambia el flujo para que el navbar esté en la parte superior */
+    align-items: center;
+    padding: 0; /* Elimina padding para evitar espacio adicional en los bordes */
+}
+
+.navbar {
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 80px;
+    display: flex;
+    justify-content: center; /* Centra el contenido del navbar */
+    background-color: black;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%; /* Centra el contenido y lo limita a un ancho específico */
+    padding: 0 20px;
+}
+
+.navbar-text {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos de texto */
+    color: white;
+}
+
+.navbar-btn {
+    display: flex;
+    justify-content: flex-end; /* Mueve el botón a la derecha */
+}
+
+
+.bold-text {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.navbar-btn {
+    flex: 1;
+}
+
+.max-container {
+    justify-self: center;
+    width: 70%;
+    display: flex;
+}
+
+.user-btn {
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: #17A2B8;
+    width: 100px;
+    height: 30px;
+}
+
+.left-container {
+    display: grid;
+    flex: 2;
+}
+
+.right-container {
+    display: grid;
+    flex: 1;
+}
+
+/* --- Contenedor 1 / User Container --- */
+
+.user-card {
+    margin: 20px;
+    overflow: hidden;
+    border: solid #ccc 2px;
+}
+
+.card-header {
+    height: 120px;
+    background-color: #17A2B8;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h1 {
+    margin-top: 30px;
+    font-size: 2.2em;
+}
+
+.card-body h3, p {
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+.avatar-m {
+    margin: 60px 30px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid white 5px
+}
+
+.icon-s {
+    height: 20px;
+    margin: 0 7px;
+}
+
+.user-card a {
+    color: #17A2B8;
+}
+
+/* --- Contenedor 2 / Extra Container --- */
+
+.extra-container {
+    margin: 20px;
+    overflow: hidden;
+    border: solid #ccc 2px;
+    line-height: 40px;
+}
+
+.container-header {
+    font-size: 12px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    align-items: center;
+    display: flex;
+}
+
+.container-header h1 {
+    margin: 0 30px;
+}
+
+.number-cont2 {
+    background-color: #aaa;
+    border-radius: 100%;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-size: 2em;
+    
+}
+
+.container-body {
+    padding: 20px;
+    display: grid;
+}
+
+.container-body p {
+    font-size: 1.5em;
+}
+
+.container-body h2 {
+    color: #999;
+    font-size: 20px;
+}
+
+/* --- Contenedor 3 / Request Container --- */
+
+.request-container {
+    margin: 20px;
+    border: solid #ccc 2px;
+}
+
+.number-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.request-container .container-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 20px;
+    padding: 0;
+}
+
+.container-element h1 {
+    font-size: 1.5em;
+    margin: 0px 20px;
+}
+
+.container-element img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.container-element .btn-AC {
+    margin-inline: 5px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.container-body .request-btn {
+    display: flex;
+}
+
+/* --- Contenedor 4 / Friends Container --- */
+
+.friends-container {
+    margin: 20px;
+    border: solid #ccc 2px;
+}
+
+.friends-container .container-element {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 20px;
+    padding: 0;
+}
+
+.link-connections {
+    padding: 20px;
+    border-top: solid 2px #ccc;
+}
+
+.link-connections a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #17A2B8
+}
